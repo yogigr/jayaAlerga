@@ -36,7 +36,7 @@ class User extends Authenticatable
     {
         $count = 0;
         foreach ($this->carts as $cart) {
-            $count += $cart->sum('quantity');
+            $count += $cart->quantity;
         }
         return $count;
     }
