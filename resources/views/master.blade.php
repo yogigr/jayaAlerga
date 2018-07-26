@@ -38,7 +38,9 @@
 							<li>
 								<a href="{{ url('cart') }}">
 									<i class="fa fa-shopping-cart"></i>
-									<span class="label label-warning">2</span>
+									<span class="label label-warning">
+										{{ Auth::user()->cartCount() }}
+									</span>
 								</a>
 							</li>
 						
